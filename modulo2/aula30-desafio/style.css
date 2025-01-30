@@ -155,7 +155,7 @@ aside > ul {
     list-style-position: inside;
     columns: 2;
     padding: 30px;
-    text-align: justify;
+    text-align: left;
 
 }
 
