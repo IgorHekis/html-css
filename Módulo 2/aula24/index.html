@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+
+        #princ {    /*Faz a div PRINCIPAL ficar do tamanho da Bola, só colocar background-color se quiser testar*/
+            margin: auto;
+            width: 250px;
+            border-radius: 900px;
+        }
+        
+        #ball1 {   /*Personaliza a 1º Bola*/
+            display: flex;
+            background-color: red;
+            font-size: 15px;
+            color: rgb(159, 46, 46);
+            width: 200px;
+            height: 200px;
+            border-radius: 200px;
+            padding: 30px;
+            margin: 30px auto;
+            outline: 5px dotted rgb(147, 35, 35);
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+
+        }   
+
+        #ball2 {    /*Personaliza a 2º Bola*/
+            display: flex;
+            background-color: red;
+            font-size: 15px;
+            color: rgb(159, 46, 46);
+            width: 200px;
+            height: 200px;
+            border-radius: 200px;
+            padding: 30px;
+            margin: 30px auto;
+            outline: 5px dotted rgb(147, 35, 35);
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #ball1:hover {  /*Efeito de  passar o mouse em cima*/
+            background-color: rgb(90, 19, 19);
+        }
+
+        #princ > #ball2 {   /*Faz a 2º Bola sumir*/
+            display: none;
+        }
+
+        #princ:hover > #ball2 {     /*Faz a 2º Bola aparecer quando passar o mouse em cima da DIV que tem o mesmo formato da 1º Bola*/
+            display: flex;
+        }
+        
+
+    </style>
+</head>
+<body>
+        <div id="princ">
+            <div id="ball1">
+                <p id="p1">BOLA 1</p>
+            </div>
+
+            <div id="ball2">
+                <p id="p2">BOLA 2</p>
+            </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+    /*
+        id    no HTML é # no CSS
+        class no HTML é . no CSS
+    */
+
+body {
+    background-color: rgb(204, 255, 203);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9em;
+}
+  
+h1 {
+    color: rgb(4, 109, 0);
+}
+
+h1#principal {
+    background-color: rgb(1, 97, 1);
+    text-align: center;
+    color: white;
+    font-size: 2.2em;
+}
+
+h2 {
+    color: rgb(73, 109, 71);
+}
+
+.basico {
+    color: rgb(31, 114, 31);
+    font-weight: bold;
+}
+
+.intermediario {
+    color: rgb(202, 202, 66);
+    font-weight: bold;
+}
+
+.avancado {
+    color: rgb(194, 25, 25);
+    font-weight: bold;
+}
+
+.destaque {
+    background-color: rgba(100, 97, 97, 0.522);
+}
